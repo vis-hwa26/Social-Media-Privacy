@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: #141010;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #141010;
+    height: 80px;
+    width: 100%;    
+}
+label.logo{
+    color: #BFBFBF;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+color: #BFBFBF;
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #2e2c2e;
+    color: crimson;
+    transition: .5s;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.txt{
+    flex: 1;
+    margin: 5px; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+}
+  
+.txt .title_para{
+    font-size: 35px;
+    color: white;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.txt p{
+    margin-left: 10%;
+    color: white;
+}
+.txt img{
+    width: 450px;
+    height: 400px;
+}
+.content .p1{
+    margin-left: 3%;
+    color: white;
+    font-size: 30px;
+}
+.content p{
+    margin-left: 3%;
+    color: white;
+    font-size: 20px;
+}
+.content ul,ol{
+    margin-left: 3%;
+    color: white;
+    font-size: 20px;
+}
+.content ul li::before{
+    content: ">";
+    color: crimson; 
+    display: inline-block;
+    width: 1.5%;
+
+}
+ol li{
+    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    counter-increment: list-0;
+}
+
+ol li::before{
+    content: counter(list-0, decimal) '. ';
+    color: red; 
+    display: inline-block;
+    width: 1.5%;
+}
+.content img{
+    width: 500px;
+    height: 500px;
+    margin: 5%;
+    margin-left: 250px;
+}
+.content h4{
+    color: crimson;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+hr{
+    border: 1px solid crimson;
+}
+.container_level{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.level{
+flex: 1; 
+margin: 5px; 
+padding: 20px;
+background-color: #ffffffe3; 
+text-align: center;
+border-radius: 16px;
+}
+.level img{
+width: 200px;
+height: 200px;
+background: transparent;
+}
+.level p{
+background: transparent;
+color: #000000;
+font-size: 25px;
+font-weight: bold;
+margin-top: 4%;
+}
+.level a{
+background: transparent;
+}
+.ano_page{
+    color: white;
+    margin: 3%;
+    font-size: 30px;
+    margin-left: 300px;
+}
+  
